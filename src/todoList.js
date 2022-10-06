@@ -7,6 +7,7 @@ const TodoListItem = ({ name, todoDispatch, id, isHere }) => {
         style={{
           backgroundColor: isHere ? "#000" : "#fff",
           color: isHere ? "#fff" : "#000",
+          textDecoration: isHere ? "line-through" : "none",
         }}
         onClick={() =>
           todoDispatch({ type: TODOACTION_TYPES.solvelist, payload: { id } })
